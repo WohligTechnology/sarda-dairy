@@ -130,6 +130,29 @@ header {
     display: block;
 }
 
+.row-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+}
+
+.col-flex {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    width: 50%;
+}
+
 //SCSS FOR HEADER
 .navbar {
     padding: 5px 0;
@@ -153,17 +176,27 @@ header {
 }
 
 .social-icon-header {
-    li {
-        img {
-            width: 25px;
-            margin-top: 10px;
+    a {
+        width: 23px;
+        height: 23px;
+        border-radius: 100%;
+        line-height: 23px;
+        margin-top: 12px;
+        background-color: #ab5225;
+    }
+    i {
+        color: #ffffff;
+        font-size: 12px;
+    }
+    .list-inline {
+        li {
+            padding: 3px;
         }
     }
 }
 
 .logo-header {
     img {
-        width: 175px;
         margin: 0 auto;
     }
 }

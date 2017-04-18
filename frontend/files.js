@@ -42,7 +42,11 @@ module.exports = [
   'js/factories/api.js',
 
   // Contorllers
+
   'js/controllers/controller.js',
+  'js/controllers/contactus.js',
+  'js/controllers/news-and-event.js',
+  'js/controllers/aboutus.js',
   'js/controllers/header-controller.js',
   'js/controllers/language-controller.js',
 ];
