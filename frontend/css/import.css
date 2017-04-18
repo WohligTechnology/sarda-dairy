@@ -9329,6 +9329,68 @@ header {
 .nav-up {
   transform: translateY(-100%); }
 
+.inline {
+  display: inline-block; }
+
+.block {
+  display: block; }
+
+.navbar {
+  padding: 5px 0; }
+
+.navbar_menu {
+  float: left;
+  height: 50px;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 20px; }
+
+.navbar .navbar_menu .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #ab5225;
+  margin-top: 4px;
+  border-radius: 1px; }
+
+.social-icon-header li img {
+  width: 25px;
+  margin-top: 10px; }
+
+.logo-header img {
+  width: 175px;
+  margin: 0 auto; }
+
+footer {
+  font-size: 10px;
+  background-color: #171717;
+  color: #ffffff;
+  padding: 10px 0; }
+  footer p {
+    margin: 5px 0;
+    font-weight: 600; }
+
+.follow p {
+  margin: 0 10px 0 0;
+  vertical-align: middle; }
+
+.social-icon-footer .list-inline {
+  margin: 0px; }
+  .social-icon-footer .list-inline li {
+    padding: 0px; }
+
+.social-icon-footer a {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  line-height: 23px;
+  margin-right: 2px;
+  background-color: #fff; }
+
+.social-icon-footer a i {
+  color: #ab5225;
+  font-size: 12px; }
+
 #fancybox-loading,
 .fancybox-close,
 .fancybox-next span,
