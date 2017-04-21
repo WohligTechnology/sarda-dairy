@@ -6,13 +6,31 @@ $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
+$brand-white:#fff;
+$brand-brown:#924118;
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 /* Bootstrap Variables Goes Here */
 
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Quicksand-Regular';
+    src: url('../fonts/Quicksand-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Quicksand-LightItalic';
+    src: url('../fonts/Quicksand-LightItalic.otf');
+}
+
 @import "other/font-fix";
 body {
     padding-top: 70px;
+    overflow-x: hidden;
 }
 
 img.loading {
@@ -131,23 +149,12 @@ header {
 }
 
 .row-flex {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
 .col-flex {
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    box-flex: 1;
-    -webkit-flex: 1;
-    -moz-flex: 1;
-    -ms-flex: 1;
     flex: 1;
     display: block;
     width: 50%;
@@ -239,4 +246,199 @@ footer {
 .social-icon-footer a i {
     color: #ab5225;
     font-size: 12px;
+}
+
+//SCSS FOR CONTACT US
+.contact-bg {
+    background: url("../img/contact/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    margin-top: -40px;
+    position: relative;
+}
+
+.fan {
+    position: absolute;
+    right: 25px;
+    bottom: 0;
+}
+
+.map {
+    height: 477px;
+}
+
+.contact-info {
+    margin-top: 330px;
+    margin-bottom: 50px;
+    .flex-item-1 {
+        // width: 55%;
+        flex: 5;
+    }
+    .flex-item-2 {
+        // width: 45%;
+        flex: 4;
+        padding: 50px;
+        background: #cd3d26;
+        position: relative;
+        &:before {
+            content: '';
+            width: 0;
+            height: 0;
+            border-bottom: 25px solid #cd3d26;
+            border-right: 22px solid transparent;
+            border-left: 25px solid transparent;
+            position: absolute;
+            left: -30px;
+            transform: rotate(-90deg);
+        }
+    }
+}
+
+//SCSS FOR NEWS AND EVENTS
+.news-content {
+    background: #fff;
+    padding: 50px;
+    margin-top: 28%;
+}
+
+.news-img {
+    background: seagreen;
+}
+
+.news-green-content {
+    p {
+        padding: 70px 30px;
+    }
+}
+
+.news-bg {
+    background: url("../img/news-event/8.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: -8px;
+}
+
+//SCSS FOR HOME START
+.section-common {
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: center center;
+    width: 100%;
+    height: 110vh;
+    p {
+        text-align: center;
+        font-size: 13px;
+        font-weight: 600;
+        font-family: Roboto-Regular;
+    }
+}
+
+//SCSS FOR SECTION-1
+.sec-bg-1 {
+    margin-top: -30px;
+    background-image: url("../img/home/1.png");
+    position: relative;
+    h2 {
+        font-size: 85px;
+        font-family: Quicksand-Regular;
+        color: $brand-white;
+        position: relative;
+    }
+    h2:before {
+        content: "";
+        position: absolute;
+        border-bottom: 2px dashed $brand-white;
+        @include size(49%,
+        20px);
+        bottom: 0;
+    }
+    h3 {
+        font-size: 25px;
+        color: $brand-white;
+        margin-top: 0;
+        font-family: Roboto-Regular;
+    }
+    p {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #0b5e7b;
+        font-family: Roboto-Regular;
+    }
+}
+
+.pro-heading {
+    padding-top: 100px;
+}
+
+//SCSS FOR SECTION-2
+.sec-bg-2 {
+    background-image: url("../img/home/2.png");
+    position: relative;
+    // margin-top: -120px;
+    // z-index: 99;
+}
+
+.section-2 {
+    position: relative;
+    margin-top: 100px;
+    p {
+        @include position(absolute,
+        48% null null null);
+        @include padding(0 155px);
+        transform: translate(50% 50%);
+    }
+}
+
+//SCSS FOR SECTION-3
+.section-3 {
+    position: relative;
+    margin-top: 100px;
+    p {
+        @include position(absolute,
+        45% null null null);
+        @include padding(0 130px);
+        transform: translate(50% 50%);
+    }
+}
+
+.sec-bg-3 {
+    background-image: url("../img/home/3.png");
+    position: relative;
+}
+
+//SCSS FOR SECTION-4
+.section-4 {
+    position: relative;
+    margin-top: 100px;
+    p {
+        @include position(absolute,
+        42% null null null);
+        @include padding(0 130px);
+        transform: translate(50% 50%);
+    }
+}
+
+.sec-bg-4 {
+    background-image: url("../img/home/4.png");
+    position: relative;
+}
+
+//SCSS FOR SECTION-5
+.section-5 {
+    position: relative;
+    margin-top: 100px;
+    p {
+        @include position(absolute,
+        45% null null null);
+        @include padding(0 140px);
+        transform: translate(50% 50%);
+    }
+}
+
+.sec-bg-5 {
+    background-image: url("../img/home/5.png");
+    position: relative;
 }

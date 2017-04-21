@@ -1,4 +1,4 @@
-myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+myApp.controller('HomeCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.getHTML("content/home.html");
         TemplateService.title = "Home"; //This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
@@ -19,7 +19,14 @@ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationServic
             console.log("This is a button Click");
         };
 
-
+        $scope.section = {
+            one: "views/section/section1.html",
+            two: "views/section/section2.html",
+            three: "views/section/section3.html",
+            four: "views/section/section4.html",
+            five: "views/section/section5.html",
+            six: "views/section/section6.html"
+        };
 
     })
 

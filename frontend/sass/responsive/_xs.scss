@@ -1,3 +1,6 @@
  @media (max-width: $screen-xs-max) {
      // Mobile
+     .row-flex {
+         flex-direction: column;
+     }
  }
