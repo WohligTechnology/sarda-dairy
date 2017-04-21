@@ -47,6 +47,7 @@ module.exports = [
   'js/controllers/contactus.js',
   'js/controllers/news-and-event.js',
   'js/controllers/aboutus.js',
+  'js/controllers/csr.js',
   'js/controllers/header-controller.js',
   'js/controllers/language-controller.js',
 ];

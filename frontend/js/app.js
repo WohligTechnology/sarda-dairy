@@ -42,6 +42,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             url: "/form",
             templateUrl: tempateURL,
             controller: 'FormCtrl'
+        })
+        .state('csr', {
+            url: "/csr",
+            templateUrl: tempateURL,
+            controller: 'CsrCtrl'
         });
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);
