@@ -1,3 +1,107 @@
-.white-box p{
-  color:blue;
+.bg-csr {
+  background:url('../img/csr/4.jpg');
+  margin-top:-20px;
+  background: cover;
 }
+
+.white-box {
+  margin-top:648px;
+  background-color: #fff;
+  padding:70px;
+
+}
+
+.white-box-heading h1{
+  font-size: 26px;
+  font-family: "Roboto-Light";
+  text-transform: uppercase;
+  padding: 0px 190px 0 190px;
+  font-weight:600;
+}
+
+.white-box-heading p{
+  font-size:14px;
+  padding-bottom: 25px;
+}
+.side-text {
+  font-size:18px;
+  color:#ce3e26;
+}
+.btn-csr{
+  background-color:#63c38b;
+  font-size:18px;
+
+}
+
+// Team Css
+
+.team-bg {
+  background: url('../img/team/4.jpg');
+  background-size: cover;
+  margin-top:-20px;
+  position: relative;
+}
+
+.white-box-team {
+  margin-top:370px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  padding:50px;
+  // position: relative;
+
+}
+
+.white-box-team-heading h1{
+  font-size: 26px;
+  font-family: "Roboto-Light";
+  text-transform: uppercase;
+  // padding: 0px 190px 0 190px;
+  font-weight:600;
+}
+
+
+
+.circle-image img {
+  width:200px;
+  height:200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-text h1{
+  font-size:20px;
+
+}
+.image-text p{
+  padding:0px 20px 0 20px;
+}
+
+.row-1{
+  padding-top:60px;
+}
+.row-2{
+  padding-top:60px;
+  padding-bottom: 60px;
+}
+.sitting-image {
+ position: absolute;
+ top:10%;
+ left: 32%;
+
+}
+
+.truk-image {
+  position: absolute;
+  bottom:4%;
+  width: 468px;
+}
+
+.side-text-team {
+    font-size:18px;
+    color:#ce3e26;
+    padding-bottom: 210px;
+
+}
+
+

@@ -1,6 +1,6 @@
-myApp.controller('CsrCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
-     $scope.template = TemplateService.getHTML("content/csr.html");
-     TemplateService.title = "Csr"; //This is the Title of the Website
+myApp.controller('TeamCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+     $scope.template = TemplateService.getHTML("content/team.html");
+     TemplateService.title = "Team"; //This is the Title of the Website
      $scope.navigation = NavigationService.getNavigation();
      $scope.mySlides = [
          '../img/csr/1.png',
