@@ -47,6 +47,11 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             url: "/csr",
             templateUrl: tempateURL,
             controller: 'CsrCtrl'
+        })
+        .state('team', {
+            url: "/team",
+            templateUrl: tempateURL,
+            controller: 'TeamCtrl'
         });
     $urlRouterProvider.otherwise("/");
     $locationProvider.html5Mode(isproduction);

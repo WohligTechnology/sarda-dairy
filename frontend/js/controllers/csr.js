@@ -3,10 +3,10 @@ myApp.controller('CsrCtrl', function ($scope, TemplateService, NavigationService
      TemplateService.title = "Csr"; //This is the Title of the Website
      $scope.navigation = NavigationService.getNavigation();
      $scope.mySlides = [
-         'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-         'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
-         'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
-         'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg'
+         '../img/csr/1.png',
+         '../img/csr/2.png',
+         '../img/csr/3.png',
+         
      ];
      $scope.formSubmitted = false;
      $scope.submitForm = function (data) {
