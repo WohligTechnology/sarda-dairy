@@ -8,6 +8,8 @@ $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
 $brand-white:#fff;
 $brand-brown:#924118;
+$brand-red:#ce3e26;
+$brand-green:#63c38b;
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 /* Bootstrap Variables Goes Here */
@@ -171,10 +173,15 @@ header {
     margin: 0;
 }
 
+.bold {
+    font-weight: 600;
+}
+
 //SCSS FOR HEADER
 .navbar {
     padding: 5px 0;
     margin-top: -70px;
+    background: rgba(255, 255, 255, 0.82);
 }
 
 .navbar_menu {
@@ -492,16 +499,69 @@ footer {
 //SCSS FOR NEWS AND EVENTS
 .news-content {
     background: #fff;
-    padding: 50px;
-    margin-top: 28%;
+    margin-top: 27.5%;
+    padding: 0 50px 50px 50px;
+    position: relative;
+    h1 {
+        font-family: Quicksand-Regular;
+        color: $brand-red;
+        font-weight: 600;
+        font-size: 60px;
+    }
+}
+
+.right-arrow {
+    position: relative;
+    &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 22px solid $brand-green;
+        border-right: 22px solid transparent;
+        border-left: 25px solid transparent;
+        position: absolute;
+        right: -13%;
+        top: 48%;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+}
+
+.left-arrow {
+    position: relative;
+    &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-bottom: 22px solid $brand-green;
+        border-right: 22px solid transparent;
+        border-left: 25px solid transparent;
+        position: absolute;
+        left: -13%;
+        top: 44%;
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+}
+
+.wheel-news {
+    @include position(absolute,
+    1% null null 19%);
+}
+
+.news-heading {
+    padding: 15px 0;
 }
 
 .news-img {
-    background: seagreen;
+    background: $brand-green;
 }
 
-.news-green-content p {
-    padding: 70px 30px;
+.news-info {
+    padding: 45px 30px;
+    span {
+        font-weight: 600;
+    }
 }
 
 .news-bg {
@@ -509,7 +569,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    margin-top: -8px;
+    margin-top: -85px;
 }
 
 //END OF NEWS AND EVENT
