@@ -43,10 +43,10 @@
 }
 
 .white-box-team {
-  margin-top:370px;
+  margin-top:220px;
   margin-bottom: 40px;
   background-color: #fff;
-  padding:50px;
+  padding:100px;
   // position: relative;
 
 }
@@ -55,7 +55,7 @@
   font-size: 26px;
   font-family: "Roboto-Light";
   text-transform: uppercase;
-  // padding: 0px 190px 0 190px;
+  padding: 0px 190px 0 190px;
   font-weight:600;
 }
 
@@ -86,22 +86,125 @@
 }
 .sitting-image {
  position: absolute;
- top:10%;
- left: 32%;
+ top:11%;
+ left: 33%;
 
 }
 
 .truk-image {
   position: absolute;
   bottom:4%;
-  width: 468px;
+  // width: 468px;
 }
 
 .side-text-team {
-    font-size:18px;
+    font-size:25px;
     color:#ce3e26;
-    padding-bottom: 210px;
+    padding-bottom: 180px;
+    padding-top: 50px;
 
+}
+.team-heading h1{
+  font-size:75px;
+  padding-top: 50px;
+  font-weight: 100px;
+  font-family: "Roboto-Light";
+  color: #fff;
+}
+
+
+// Overview CSS
+
+.main-overview{
+  background: url('../img/overview/bg.jpg');
+  background-size: cover;
+  margin-top: -22px;
+  position: relative;
+
+}
+
+.red-box {
+  background-color:$brand-red;
+  color: #fff;
+  margin-top: 24%;
+
+}
+
+.aboutus-text {
+  padding:50px;
+}
+.aboutus-heading {
+  h1 {
+  padding-top: 30px;
+  font-size: 60px;
+  font-family: "Roboto-Light";
+  }p{
+    font-size:20px;
+    font-family: "Roboto-Light";
+    padding-top:20px;
+  }
+}
+
+.vision-mission {
+  background-color:#63c28a;
+  .mission {
+    text-align: left;
+    padding-top: 30px;
+  }
+  .vision{
+    text-align: right;
+    padding-top: 30px;
+  }
+  p {
+    padding-top: 30px;
+  }
+}
+
+
+.overview-butn {
+  background-color: #63c28a;
+
+  .side-text-overview{
+    padding-top: 75px; 
+    padding-bottom:75px;
+  }
+}
+
+.side-text-overview span{
+  font-size:25px;
+  padding-right: 20px;
+}
+
+.btn-overview {
+  font-size:25px;
+}
+
+.overview-heading h1 {
+  margin-top: 10%;
+  font-size: 80px;
+  color: #87492e;
+  font-family: "Roboto-Light";
+}
+.bottle-image img{
+  position:absolute;
+  top: 52%;
+}
+.haystack-image img {
+  position: absolute;
+  right: 1px;
+  top: 50%;
+}
+
+.milk-image img {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.tractor-image img {
+  position:absolute;
+  bottom: 10%;
+  left: 0px;
 }
 
 
