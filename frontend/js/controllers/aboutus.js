@@ -3,10 +3,13 @@
      TemplateService.title = "AboutUs"; //This is the Title of the Website
      $scope.navigation = NavigationService.getNavigation();
      $scope.mySlides = [
-         'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
-         'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
-         'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
-         'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg'
+         '../img/aboutus/1.png',
+         '../img/aboutus/2.png',
+         '../img/aboutus/3.png',
+         '../img/aboutus/4.png',
+         '../img/aboutus/5.png',
+         '../img/aboutus/6.png'
+
      ];
      $scope.formSubmitted = false;
      $scope.submitForm = function (data) {
