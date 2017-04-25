@@ -177,6 +177,17 @@ header {
     font-weight: 600;
 }
 
+.p0 {
+    padding: 0px;
+}
+
+h1 {
+    font-family: Quicksand-Regular;
+    color: $brand-brown;
+    font-weight: 600;
+    font-size: 58px;
+}
+
 //SCSS FOR HEADER
 .navbar {
     padding: 5px 0;
@@ -426,10 +437,6 @@ footer {
     34.30% 7% null null);
 }
 
-.map {
-    height: 477px;
-}
-
 .contact-info {
      ::-webkit-input-placeholder {
         color: white;
@@ -440,6 +447,9 @@ footer {
         &:active {
             border-color: white;
         }
+    }
+    .map {
+        height: 477px;
     }
 }
 
@@ -573,3 +583,132 @@ footer {
 }
 
 //END OF NEWS AND EVENT
+//SCSS FOR ABOUT US 
+.about-bg {
+    background: url("../img/aboutus/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: -85px;
+}
+
+.about-white {
+    margin-top: 58.5%;
+    background: $brand-white;
+    padding: 50px;
+    position: relative;
+}
+
+.product-slider {
+    background: url("../img/aboutus/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    .flexslider {
+        background: transparent;
+        border: none;
+        padding: 150px 80px 30px 80px;
+        img {
+            min-height: 225px;
+        }
+        .flex-control-nav {
+            display: none;
+        }
+    }
+}
+
+.product-heading {
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    h1 {
+        color: $brand-white;
+    }
+}
+
+.news-and-event {
+    background: $brand-green;
+    padding: 30px;
+    position: relative;
+}
+
+.new-event-slider {
+    .flexslider {
+        margin: 20px 120px;
+        background: transparent;
+        border: none;
+    }
+}
+
+.about-desc {
+    p {
+        padding: 0 180px;
+    }
+}
+
+.whitey {
+    background: $brand-white;
+    margin-bottom: 10px;
+    p {
+        font-size: 12px;
+    }
+}
+
+.btn-brown {
+    width: 100px;
+    padding: 3px;
+    border-radius: 5px;
+    color: $brand-white;
+    background: $brand-brown;
+}
+
+.about-contactus {
+    padding: 50px 0;
+    position: relative;
+    .flex-item-1 {
+        flex: 5;
+    }
+    .flex-item-2 {
+        flex: 4;
+        padding: 20px 50px;
+        background: $brand-white;
+    }
+    h5 {
+        font-weight: 600;
+    }
+    h5,
+    p {
+        color: black;
+        font-family: Roboto-Light;
+    }
+    h2 {
+        font-family: Quicksand-Regular;
+        color: black;
+        font-weight: 600;
+    }
+    .map {
+        height: 450px;
+    }
+}
+
+.news-details {
+    background: white;
+    p {
+        padding: 28px;
+    }
+}
+
+.news-img img {
+    min-height: 131px;
+}
+
+.news-subdetail {
+    padding: 15px;
+}
+
+.video {
+    position: absolute;
+    top: -6%;
+    left: 47%;
+}
