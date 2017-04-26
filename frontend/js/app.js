@@ -18,10 +18,10 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
     // for http request with session
     $httpProvider.defaults.withCredentials = true;
     $stateProvider
-        .state('home', {
-            url: "/",
+        .state('procurement', {
+            url: "/procurement",
             templateUrl: tempateURL,
-            controller: 'HomeCtrl'
+            controller: 'ProcurementCtrl'
         })
         .state('contactus', {
             url: "/contactus",
@@ -33,10 +33,15 @@ myApp.config(function ($stateProvider, $urlRouterProvider, $httpProvider, $locat
             templateUrl: tempateURL,
             controller: 'NewsAndEventCtrl'
         })
-        .state('aboutus', {
-            url: "/aboutus",
+        .state('home', {
+            url: "/",
             templateUrl: tempateURL,
-            controller: 'AboutUsCtrl'
+            controller: 'HomeCtrl'
+        })
+        .state('product', {
+            url: "/product",
+            templateUrl: tempateURL,
+            controller: 'ProductCtrl'
         })
         .state('form', {
             url: "/form",

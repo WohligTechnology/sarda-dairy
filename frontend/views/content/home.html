@@ -1,39 +1,187 @@
-<!--<div class="container">-->
-<!--<a class="btn btn-default" ng-click="buttonClick()">Demo Button</a>-->
-<!--
-    <flex-slider flex-slide="s in mySlides" prev-text="" next-text="">
-        <li>
-            <img ng-src="{{s}}" class="img-full">
-        </li>
-    </flex-slider>-->
+<div class="about-us about-bg">
+    <div class="container">
+        <div class="about-white">
+            <div class="about-heading text-center">
+                <h1>ABOUT US</h1>
+            </div>
+            <div class="video"> <img src="img/aboutus/13.png" alt="" class="img-responsive"></div>
+            <div class="about-desc">
+                <h4 class="text-center">A REMARKABLE POSITION AMOUNG DAIRY INDUSTRY</h4>
+                <p class="text-justify">Sarda Group, head quarter in Raipur, Chhattisgarh. Our group are led by expertise professionals which made
+                    us a leading corporate. One of our company Sarda Energy & Mineral ltd has listed in BSE/NSE & achieve
+                    one of a part among top 500 companies in India. We have commissioned a new vertical company in dairy
+                    industry namely "Sarda Dairy".</p>
+                <p class="text-justify"> Sarda Dairy differentiates itself in dairy business model i.e. from dairy farm to finished milk products.
+                    Sarda Dairy also focus on rural farmers for developing the dairy farming on win-win model of CSR. Our
+                    intention is that Sarda Dairy would play an ever increasing role by providing quality milk and milk related
+                    products to people, as everyone knows milk is important for human health.</p>
+                <div class="text-center">
+                    <button class="btn btn-brown">Know more</button>
+                </div>
+            </div>
+            <div class="vehicle"> <img src="img/aboutus/6.png" alt="" class="img-responsive"></div>
+            <div class="waves"> <img src="img/aboutus/7.png" alt="" class="img-responsive"></div>
+            <div class="product-slider">
+                <div class="product-heading">
+                    <h1 class="text-center text-uppercase">Products</h1>
+                </div>
+                <flex-slider flex-slide="s in myProduct track by $index" prev-text="" next-text="" animation="slide" item-width="200" item-margin="45"
+                    min-items="4">
+                    <li>
+                        <img ng-src="{{s.img}}" class="img-full">
 
-<!--<swiper autoplay="5000" effect="slide" slides-per-view="1" loop="true">
-        <slides>
-            <slide ng-repeat="s in mySlides">
-                <img ng-src="{{s}}" class="img-full" noloading="true">
-            </slide>
-        </slides>
-        <prev></prev>
-        <next></next>
-        <pagination></pagination>
-    </swiper>-->
-<!--
-    <div class="row">
-        <div class="col-md-2" ng-repeat="s in mySlides">
-            <a ng-href="{{s}}" rel="gal" fancybox>
-                <img ng-src="{{s}}" class="img-full">
-            </a>
+                        <h3 class="text-center">{{s.text}}</h3>
+                    </li>
+                </flex-slider>
+            </div>
+            <div class="stored-locator">
+                <a></a>
+                <button class="btn btn-locator">Stored Locator</button>
+            </div>
+            <div class="cow"> <img src="img/aboutus/5.png" alt="" class="img-responsive"></div>
         </div>
-        <div class="col-md-2">
-            <a class="various fancybox.iframe" href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=1" fancybox><img ng-src="http://img.youtube.com/vi/L9szn1QQfas/maxresdefault.jpg" class="img-full"></a>
+        <div class="news-and-event">
+            <div class="event-heading text-center">
+                <h1>NEWS & EVENT</h1>
+            </div>
+            <div class="wheel"> <img src="img/aboutus/11.png" alt="" class="img-responsive"></div>
+            <div class="new-event-slider">
+                <flex-slider flex-slide="s in newEvent" prev-text="" next-text="">
+                    <li>
+                        <div class="row">
+                            <div class="col-md-6 p0">
+                                <div class="news-details">
+                                    <img src="img/aboutus/8.jpg" alt="">
+                                    <div class="news-details-info">
+                                        <h5 class="media-heading text-uppercase">Lorem Ipsum is simply dummy</h5>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an unknown printer took a galley of type and scrambled it to make a type specimen
+                                            book.
+                                            <br>
+                                            <span>Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="whitey">
+                                    <div class="media">
+                                        <div class="media-left media-top">
+                                            <div class="event-img">
+                                                <img src="img/aboutus/9.jpg" class="media-object">
+                                            </div>
+
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="news-subdetail">
+                                                <h5 class="media-heading text-uppercase">Lorem Ipsum is simply</h5>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                    Lorem Ipsum speciman book</p>
+                                                <span>Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="whitey">
+                                    <div class="media">
+                                        <div class="media-left media-top">
+                                            <div class="event-img">
+                                                <img src="img/aboutus/10.jpg" class="media-object">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="news-subdetail">
+                                                <h5 class="media-heading text-uppercase">Lorem Ipsum is simply </h5>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                    Lorem Ipsum speciman book</p>
+                                                <span>Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="whitey">
+                                    <div class="media">
+                                        <div class="media-left media-top">
+                                            <div class="event-img">
+                                                <img src="img/aboutus/9.jpg" class="media-object">
+                                            </div>
+                                        </div>
+                                        <div class="media-body ">
+                                            <div class="news-subdetail">
+                                                <h5 class="media-heading text-uppercase">Lorem Ipsum is simply</h5>
+                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                                    Lorem Ipsum speciman book</p>
+                                                <span>Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </flex-slider>
+            </div>
         </div>
-    </div>-->
-<div class="home">
-    <section class="section one section-common sec-bg-1" id="section1" ng-include="section.one"></section>
-    <section class="section two section-common sec-bg-2" id="section2" ng-include="section.two"></section>
-    <section class="section three section-common sec-bg-3" id="section3" ng-include="section.three"></section>
-    <section class="section four section-common sec-bg-4" id="section4" ng-include="section.four"></section>
-    <section class="section five section-common sec-bg-5" id="section5" ng-include="section.five"></section>
-    <section class="section six section-common sec-bg-6" id="section6" ng-include="section.six"></section>
+        <div class="about-contactus">
+            <div class="row-flex">
+                <div class="flex-item-1">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d141497.35746472114!2d81.53141920086995!3d21.26080133200753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dda23be28229%3A0x163ee1204ff9e240!2sRaipur%2C+Chhattisgarh!5e0!3m2!1sen!2sin!4v1492499826270"
+                            width="627" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="flex-item-2">
+                    <div class="contact-heading text-center">
+                        <h1>CONTACT US</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="m0">DAIRY FARM</h5>
+                            <p>Gram Nayak Tand, Tidaka Road,Kharora, Raipur, Chhattisgarh</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="m0">CORPORATE OFFICE</h5>
+                            <p>52 Mahalaxmi Market, Pandri,Raipur, Chhattisgarh</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="mobile" placeholder="Mobile No.">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Comments..."></textarea>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-brown">Sent</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="fan">
+                    <img src="img/contact/1.png" alt="" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<!--</div>-->

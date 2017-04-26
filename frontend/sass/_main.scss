@@ -279,7 +279,7 @@ footer {
 }
 
 //END OF FOOTER
-//SCSS FOR HOME START
+//SCSS FOR PROCUREMENT START
 .section-common {
     background-repeat: no-repeat;
     // background-size: cover;
@@ -409,7 +409,7 @@ footer {
     min-height: 800px;
 }
 
-//END OF HOME
+//END OF PROCUREMENT
 //SCSS FOR CONTACT US
 .contact-bg {
     background: url("../img/contact/2.jpg");
@@ -583,7 +583,7 @@ footer {
 }
 
 //END OF NEWS AND EVENT
-//SCSS FOR ABOUT US 
+//SCSS FOR HOME
 .about-bg {
     background: url("../img/aboutus/1.jpg");
     background-repeat: no-repeat;
@@ -769,3 +769,18 @@ footer {
     font-size: 22px;
     font-family: 'Roboto-Light';
 }
+
+//END OF HOME SCSS
+//SCSS FOR PRODUCT START
+.product-bg {
+    background: url("../img/product/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.home {
+    background: $brand-white;
+}
+
+//END OF PRODUCT SCSS
