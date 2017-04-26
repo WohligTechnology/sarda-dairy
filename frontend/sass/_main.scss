@@ -605,22 +605,28 @@ footer {
     background-size: cover;
     width: 100%;
     position: relative;
+    z-index: 9;
     .flexslider {
         background: transparent;
         border: none;
-        padding: 150px 80px 30px 80px;
+        padding: 200px 90px 30px 90px;
         img {
-            min-height: 225px;
+            min-height: 250px;
         }
         .flex-control-nav {
             display: none;
+        }
+        h3 {
+            color: $brand-white;
+            font-family: Roboto-Regular;
+            font-weight: 600;
         }
     }
 }
 
 .product-heading {
     position: absolute;
-    top: 5%;
+    top: 15%;
     left: 35%;
     h1 {
         color: $brand-white;
@@ -629,8 +635,13 @@ footer {
 
 .news-and-event {
     background: $brand-green;
-    padding: 30px;
+    @include padding(150px 30px 70px 30px);
     position: relative;
+    margin-top: -18%;
+    .wheel {
+        @include position(absolute,
+        20% null null 21%);
+    }
 }
 
 .new-event-slider {
@@ -638,6 +649,9 @@ footer {
         margin: 20px 120px;
         background: transparent;
         border: none;
+        .flex-direction-nav {
+            display: none;
+        }
     }
 }
 
@@ -690,25 +704,68 @@ footer {
     .map {
         height: 450px;
     }
+    .fan {
+        @include position(absolute,
+        null -5% 0 null);
+    }
+}
+
+.media-object {
+    width: 140px !important;
+}
+
+.event-img {
+    min-height: 130px;
 }
 
 .news-details {
     background: white;
-    p {
+    .news-details-info {
         padding: 28px;
     }
-}
-
-.news-img img {
-    min-height: 131px;
 }
 
 .news-subdetail {
     padding: 15px;
 }
 
+.event-heading {
+    h1 {
+        color: $brand-white;
+    }
+}
+
 .video {
-    position: absolute;
-    top: -6%;
-    left: 47%;
+    @include position(absolute,
+    -6% null null 47%);
+}
+
+.vehicle {
+    @include position(absolute,
+    35% null null null);
+    z-index: 999;
+}
+
+.waves {
+    @include position(absolute,
+    17% null null 62%);
+    z-index: 999;
+}
+
+.cow {
+    @include position(absolute,
+    62% -6% null null);
+    z-index: 9;
+}
+
+.btn-locator {
+    @include position(absolute,
+    15% -12% null null);
+    transform: rotate(-90deg);
+    border-radius: 4px;
+    background-color: $brand-brown;
+    color: $brand-white;
+    border: 1px solid $brand-brown;
+    font-size: 22px;
+    font-family: 'Roboto-Light';
 }
