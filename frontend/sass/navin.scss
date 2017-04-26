@@ -132,12 +132,15 @@
 
 .aboutus-text {
   padding:50px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .aboutus-heading {
   h1 {
   padding-top: 30px;
   font-size: 60px;
   font-family: "Roboto-Light";
+  color: #fff;
   }p{
     font-size:20px;
     font-family: "Roboto-Light";
@@ -150,17 +153,70 @@
   .mission {
     text-align: left;
     padding-top: 30px;
+    position: relative;
+    p{
+    padding-left: 40px;
+    padding-bottom: 20px;
+    }
+    
+
   }
   .vision{
     text-align: right;
     padding-top: 30px;
+    position: relative;
+    p{
+      padding-right: 40px;
+    }
   }
   p {
     padding-top: 30px;
+    font-size: 16px;
   }
+    h1{
+      color: #000101;
+
+    }
 }
 
 
+
+.visionparagraph {
+  padding-left: 90px;
+}
+
+h1.text-uppercase.vision:before {
+    content: '';
+    border-bottom: 3px solid #fff;
+    width: 15%;
+    height: 10px;
+    position: absolute;
+    top: 90px;
+    right: 9%;
+}
+
+h1.text-uppercase.mission:before {
+    content: '';
+    border-bottom: 3px solid #fff;
+    width: 15%;
+    height: 10px;
+    position: absolute;
+    top: 90px;
+    left: 14%;
+}
+
+.visionparagraph{
+  position: relative;
+}
+p.vimi-line:after{
+content: '';
+    border: 2px solid #fff;
+    width: 1px;
+    height: 150px;
+    position: absolute;
+    right: -16px;
+    top: -14px;
+}   
 .overview-butn {
   background-color: #63c28a;
 
@@ -187,12 +243,12 @@
 }
 .bottle-image img{
   position:absolute;
-  top: 52%;
+  top: 36%;
 }
 .haystack-image img {
   position: absolute;
   right: 1px;
-  top: 50%;
+  top: 34%;
 }
 
 .milk-image img {
@@ -203,8 +259,181 @@
 
 .tractor-image img {
   position:absolute;
-  bottom: 10%;
-  left: 0px;
+  bottom: 7%;
+  left: -10px;
 }
 
+
+
+// Only for timeline
+
+#values {
+  background-color:#ebb94c;
+}
+
+.timeline {
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+}
+
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timeline > li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+  content: " ";
+  display: table;
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li > .timeline-panel {
+  width: 46%;
+  float: left;
+  border-radius: 2px;
+  padding: 5px;
+  position: relative;
+  top:25px;
+}
+
+// White line
+
+.page-header{
+  h1{
+  position:relative
+  }
+}
+
+h1#timeline:before{
+    content: '';
+    border-bottom: 3px solid #fff;
+    width: 6%;
+    height: 10px;
+    position: absolute;
+    top: 56px;
+    right: 47%;
+}
+#values .page-header {
+  border-bottom: 0px !important;
+}
+// .timeline > li > .timeline-panel:before {
+//   position: absolute;
+//   top: 26px;
+//   right: -15px;
+//   display: inline-block;
+//   border-top: 15px solid transparent;
+//   border-left: 15px solid #ccc;
+//   border-right: 0 solid #ccc;
+//   border-bottom: 15px solid transparent;
+//   content: " ";
+// }
+
+// .timeline > li > .timeline-panel:after {
+//   position: absolute;
+//   top: 27px;
+//   right: -14px;
+//   display: inline-block;
+//   border-top: 14px solid transparent;
+//   border-left: 14px solid #fff;
+//   border-right: 0 solid #fff;
+//   border-bottom: 14px solid transparent;
+//   content: " ";
+// }
+
+.timeline > li > .timeline-badge {
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 25px;
+  left: 51%;
+  margin-left: -25px;
+  background-color: #fff;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+// .timeline > li.timeline-inverted > .timeline-panel:after {
+//   border-left-width: 0;
+//   border-right-width: 14px;
+//   left: -14px;
+//   right: auto;
+// }
+
+
+
+.timeline-title {
+  margin-top: 0;
+  color: inherit;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+  margin-bottom: 0;
+}
+
+.timeline-body > p + p {
+  margin-top: 5px;
+}
+
+h4.timeline-title.heading {
+  text-align: right;
+}
+.timeline-body {
+  p.accountability{
+    text-align:right;
+  }
+  p.integrity{
+    text-align: right;
+  }
+}
+
+ul .timeline-heading .timeline-title {
+  font-size: 20px;
+  font-family: "Roboto-Light";
+  font-weight: bold;
+}
 
