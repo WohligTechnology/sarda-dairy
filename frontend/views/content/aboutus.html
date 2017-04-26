@@ -6,7 +6,7 @@
             </div>
             <div class="video"> <img src="img/aboutus/13.png" alt="" class="img-responsive"></div>
             <div class="about-desc">
-                <h5 class="text-center">A REMARKABLE POSITION AMOUNG DAIRY INDUSTRY</h5>
+                <h4 class="text-center">A REMARKABLE POSITION AMOUNG DAIRY INDUSTRY</h4>
                 <p class="text-justify">Sarda Group, head quarter in Raipur, Chhattisgarh. Our group are led by expertise professionals which made
                     us a leading corporate. One of our company Sarda Energy & Mineral ltd has listed in BSE/NSE & achieve
                     one of a part among top 500 companies in India. We have commissioned a new vertical company in dairy
@@ -19,51 +19,63 @@
                     <button class="btn btn-brown">Know more</button>
                 </div>
             </div>
-
+            <div class="vehicle"> <img src="img/aboutus/6.png" alt="" class="img-responsive"></div>
+            <div class="waves"> <img src="img/aboutus/7.png" alt="" class="img-responsive"></div>
             <div class="product-slider">
                 <div class="product-heading">
-                    <h1 class="text-center text-uppercase">Product</h1>
+                    <h1 class="text-center text-uppercase">Products</h1>
                 </div>
-                <flex-slider flex-slide="s in mySlides" prev-text="" next-text="" animation="slide" item-width="200" item-margin="45" min-items="4">
+                <flex-slider flex-slide="s in myProduct track by $index" prev-text="" next-text="" animation="slide" item-width="200" item-margin="45"
+                    min-items="4">
                     <li>
-                        <img ng-src="{{s}}" class="img-full">
-                        <h3 class="text-center">milk</h3>
+                        <img ng-src="{{s.img}}" class="img-full">
+
+                        <h3 class="text-center">{{s.text}}</h3>
                     </li>
                 </flex-slider>
             </div>
+            <div class="stored-locator">
+                <a></a>
+                <button class="btn btn-locator">Stored Locator</button>
+            </div>
+            <div class="cow"> <img src="img/aboutus/5.png" alt="" class="img-responsive"></div>
         </div>
         <div class="news-and-event">
-            <div class="news-heading text-center">
+            <div class="event-heading text-center">
                 <h1>NEWS & EVENT</h1>
             </div>
-
+            <div class="wheel"> <img src="img/aboutus/11.png" alt="" class="img-responsive"></div>
             <div class="new-event-slider">
-                <flex-slider flex-slide="s in mySlides" prev-text="" next-text="">
+                <flex-slider flex-slide="s in newEvent" prev-text="" next-text="">
                     <li>
                         <div class="row">
                             <div class="col-md-6 p0">
                                 <div class="news-details">
                                     <img src="img/aboutus/8.jpg" alt="">
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                        has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                        printer took a galley of type and scrambled it to make a type specimen book.<br>
-                                        <span>Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
-                                    </p>
-
+                                    <div class="news-details-info">
+                                        <h5 class="media-heading text-uppercase">Lorem Ipsum is simply dummy</h5>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when
+                                            an unknown printer took a galley of type and scrambled it to make a type specimen
+                                            book.
+                                            <br>
+                                            <span>Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="whitey">
                                     <div class="media">
                                         <div class="media-left media-top">
-                                            <div class="news-img">
-                                                <img src="img/aboutus/9.jpg" class="media-object" style="width:135px;">
+                                            <div class="event-img">
+                                                <img src="img/aboutus/9.jpg" class="media-object">
                                             </div>
 
                                         </div>
                                         <div class="media-body">
                                             <div class="news-subdetail">
-                                                <h5 class="media-heading text-uppercase">Lorem ipsum</h5>
+                                                <h5 class="media-heading text-uppercase">Lorem Ipsum is simply</h5>
                                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                                     Lorem Ipsum speciman book</p>
                                                 <span>Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
@@ -74,13 +86,13 @@
                                 <div class="whitey">
                                     <div class="media">
                                         <div class="media-left media-top">
-                                            <div class="news-img">
-                                                <img src="img/aboutus/10.jpg" class="media-object" style="width:135px;">
+                                            <div class="event-img">
+                                                <img src="img/aboutus/10.jpg" class="media-object">
                                             </div>
                                         </div>
                                         <div class="media-body">
                                             <div class="news-subdetail">
-                                                <h5 class="media-heading text-uppercase">Lorem ipsum</h5>
+                                                <h5 class="media-heading text-uppercase">Lorem Ipsum is simply </h5>
                                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                                     Lorem Ipsum speciman book</p>
                                                 <span>Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
@@ -91,13 +103,13 @@
                                 <div class="whitey">
                                     <div class="media">
                                         <div class="media-left media-top">
-                                            <div class="news-img">
-                                                <img src="img/aboutus/9.jpg" class="media-object" style="width:135px;">
+                                            <div class="event-img">
+                                                <img src="img/aboutus/9.jpg" class="media-object">
                                             </div>
                                         </div>
                                         <div class="media-body ">
                                             <div class="news-subdetail">
-                                                <h5 class="media-heading text-uppercase">Lorem ipsum</h5>
+                                                <h5 class="media-heading text-uppercase">Lorem Ipsum is simply</h5>
                                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                                     Lorem Ipsum speciman book</p>
                                                 <span>Read more <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
@@ -165,6 +177,9 @@
                             </div>
                         </form>
                     </div>
+                </div>
+                <div class="fan">
+                    <img src="img/contact/1.png" alt="" class="img-responsive">
                 </div>
             </div>
         </div>
