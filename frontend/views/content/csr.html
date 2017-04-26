@@ -13,24 +13,24 @@
           into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
           of Letraset sheets containing Lorem Ipsum passages,</p>
       </div>
+      <div class="csr-slider">
       <div class="flex-slider">
-        <flex-slider flex-slide="s in mySlides" prev-text="" next-text="" animation="slide" item-width="320" item-margin="25" min-items="2">
+        <flex-slider flex-slide="s in CsrSlide track by $index" prev-text="" next-text="" animation="slide" item-width="320" item-margin="25" min-items="2">
           <!--animation="slide" item-width="100" item-margin="50" min-items="3">-->
           <li>
-            <img ng-src="{{s}}" class="img-full">
+            <img ng-src="{{s.img}}" class="img-full">
           </li>
         </flex-slider>
       </div>
       <div class="text-center side-text">
-        <span class="inline">Also View:</span>
-        <div class="btn-grp inline ">
-          <div class="btn btn-default btn-csr">Overview</div>
-          <div class="btn btn-default btn-csr">Our Team</div>
-
+        <span class="inline alsoview text-uppercase">Also View:</span>
+        <div class="btn-grp inline bt-ov-outeam">
+          <div class="btn btn-default btn-csr overview text-uppercase">Overview</div>
+          <div class="btn btn-default btn-csr  ourteam text-uppercase">Our Team</div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
+</div>
 <!--flex-slide="s in mySlides"-->
