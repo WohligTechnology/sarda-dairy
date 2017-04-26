@@ -1,6 +1,6 @@
- myApp.controller('AboutUsCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
-     $scope.template = TemplateService.getHTML("content/aboutus.html");
-     TemplateService.title = "AboutUs"; //This is the Title of the Website
+ myApp.controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+     $scope.template = TemplateService.getHTML("content/home.html");
+     TemplateService.title = "home"; //This is the Title of the Website
      $scope.navigation = NavigationService.getNavigation();
      $scope.myProduct = [{
              img: 'img/aboutus/1.png',

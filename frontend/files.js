@@ -43,11 +43,12 @@ module.exports = [
 
   // Contorllers
 
-  'js/controllers/controller.js',
+  'js/controllers/procurement.js',
   'js/controllers/contactus.js',
   'js/controllers/news-and-event.js',
-  'js/controllers/aboutus.js',
+  'js/controllers/home.js',
   'js/controllers/csr.js',
+  'js/controllers/product.js',
   'js/controllers/team.js',
   'js/controllers/overview.js',
   'js/controllers/header-controller.js',

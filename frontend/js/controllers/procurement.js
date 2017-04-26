@@ -1,6 +1,6 @@
-myApp.controller('HomeCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout) {
-        $scope.template = TemplateService.getHTML("content/home.html");
-        TemplateService.title = "Home"; //This is the Title of the Website
+myApp.controller('ProcurementCtrl', function ($scope, $state, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.getHTML("content/procurement.html");
+        TemplateService.title = "Procurement"; //This is the Title of the Website
         $scope.navigation = NavigationService.getNavigation();
 
         $scope.mySlides = [
