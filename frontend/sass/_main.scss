@@ -25,6 +25,11 @@ $brand-green:#63c38b;
 }
 
 @font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
     font-family: 'Quicksand-Regular';
     src: url('../fonts/Quicksand-Regular.otf');
 }
@@ -415,7 +420,7 @@ footer {
     background: url("../img/contact/2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center top;
     width: 100%;
     margin-top: -20px;
     position: relative;
@@ -429,12 +434,12 @@ footer {
 
 .truck {
     @include position(absolute,
-    30% null null 6%);
+    27% null null 6%);
 }
 
 .wheel {
     @include position(absolute,
-    34.30% 7% null null);
+    31.30% 7% null null);
 }
 
 .contact-info {
@@ -462,7 +467,7 @@ footer {
 }
 
 .contact-info {
-    margin: 300px 0 50px 0;
+    margin: 260px 0 50px 0;
     .flex-item-1 {
         position: relative;
         flex: 5;
@@ -569,8 +574,15 @@ footer {
 
 .news-info {
     padding: 45px 30px;
+    h5 {
+        font-family: "Roboto-Medium";
+    }
+    p {
+        font-family: "Roboto-Light";
+    }
     span {
         font-weight: 600;
+        font-family: "Roboto-Regular";
     }
 }
 
@@ -656,8 +668,12 @@ footer {
 }
 
 .about-desc {
+    h4 {
+        font-family: Roboto-Regular;
+    }
     p {
         padding: 0 180px;
+        font-family: Roboto-Light;
     }
 }
 
@@ -675,6 +691,7 @@ footer {
     border-radius: 5px;
     color: $brand-white;
     background: $brand-brown;
+    font-family: Roboto-Light;
 }
 
 .about-contactus {
@@ -715,18 +732,32 @@ footer {
 }
 
 .event-img {
-    min-height: 130px;
+    img {
+        min-height: 141px;
+    }
 }
 
 .news-details {
     background: white;
     .news-details-info {
         padding: 28px;
+        h5 {
+            font-family: Roboto-Medium;
+        }
+        span {
+            font-family: Roboto-Regular;
+        }
     }
 }
 
 .news-subdetail {
     padding: 15px;
+    h5 {
+        font-family: Roboto-Medium;
+    }
+    span {
+        font-family: Roboto-Regular;
+    }
 }
 
 .event-heading {
@@ -772,15 +803,53 @@ footer {
 
 //END OF HOME SCSS
 //SCSS FOR PRODUCT START
-.product-bg {
-    background: url("../img/product/bg.png");
+.home {
+    background: $brand-white;
+    padding: 20px;
+}
+
+// .grass {
+//     position: relative;
+//     .grass-content {
+//         position: absolute;
+//         top: 10%;
+//     }
+// }
+.grass {
+    background: url("../img/product/3.jpg");
+    //   background-position: center center;
+    background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    //height: 100vh;
+    //position: relative;
+    .grass-content {
+        // position: absolute;
+        top: 10%;
+    }
+}
+
+.product-details {
+    background: url("../img/product/5.png");
     background-size: cover;
     width: 100%;
 }
 
-.home {
-    background: $brand-white;
+.special-features {
+    background-color: #ebb94c;
+}
+
+.store-locator-section {
+    background-color: #d8f0e2;
+    padding: 10px 0px 70px 90px;
+}
+
+.bg-vachan {
+    background: url("../img/product/7.png");
+    background-size: cover;
+    width: 100%;
+    height: 573px;
+    padding: 80px;
 }
 
 //END OF PRODUCT SCSS
