@@ -9820,32 +9820,63 @@ footer {
   font-size: 22px;
   font-family: 'Roboto-Light'; }
 
+.product-bg img {
+  margin-top: -20px; }
+
+.vachan-unomilk {
+  position: relative; }
+  .vachan-unomilk .vachan-content {
+    position: absolute;
+    top: 0;
+    padding: 120px 70px;
+    text-align: justify; }
+
 .grass {
-  background: url("../img/product/3.jpg");
-  background-size: cover;
+  background: url(../img/product/3.jpg);
+  background-size: contain;
   background-repeat: no-repeat;
-  width: 100%; }
-  .grass .grass-content {
-    top: 10%; }
+  width: 100%;
+  padding: 0 30px;
+  background-position: center top;
+  position: relative; }
+
+.product-table {
+  position: absolute;
+  top: 14%;
+  left: 32%; }
 
 .product-details {
-  background: url("../img/product/5.png");
-  background-size: cover;
-  width: 100%; }
+  position: relative; }
 
 .special-features {
-  background-color: #ebb94c; }
+  background-color: #ebb94c;
+  margin-top: -14.6%; }
+
+.milk {
+  position: absolute;
+  top: 75px;
+  z-index: 99; }
+
+.special-features-main {
+  margin-top: 35%;
+  padding: 0 60px; }
 
 .store-locator-section {
   background-color: #d8f0e2;
-  padding: 10px 0px 70px 90px; }
+  padding: 10px 0px 70px 90px;
+  margin-top: -15px;
+  position: relative; }
 
-.bg-vachan {
-  background: url("../img/product/7.png");
-  background-size: cover;
-  width: 100%;
-  height: 573px;
-  padding: 80px; }
+.store-search {
+  width: 320px; }
+
+.house {
+  background: #fff;
+  padding: 20px;
+  margin-top: 30px; }
+
+.btn-search {
+  border-left: none; }
 
 .bg-csr {
   background: url("../img/csr/4.jpg");

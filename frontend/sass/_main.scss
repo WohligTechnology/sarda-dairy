@@ -810,41 +810,87 @@ footer {
 //         top: 10%;
 //     }
 // }
-.grass {
-    background: url("../img/product/3.jpg");
-    //   background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    //height: 100vh;
-    //position: relative;
-    .grass-content {
-        // position: absolute;
-        top: 10%;
+.product-bg {
+    img {
+        margin-top: -20px;
     }
 }
 
-.product-details {
-    background: url("../img/product/5.png");
-    background-size: cover;
+.vachan-unomilk {
+    position: relative;
+    .vachan-content {
+        position: absolute;
+        top: 0;
+        padding: 120px 70px;
+        text-align: justify;
+    }
+}
+
+.grass {
+    background: url(../img/product/3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100%;
+    padding: 0 30px;
+    background-position: center top;
+    position: relative;
+    // .grass-content {
+    //     position: absolute;
+    //     top: 10%;
+    // }
+}
+
+.product-table {
+    @include position(absolute,
+    14% null null 32%);
+}
+
+.product-details {
+    position: relative;
 }
 
 .special-features {
     background-color: #ebb94c;
+    margin-top: -14.6%;
+}
+
+.milk {
+    position: absolute;
+    top: 75px;
+    z-index: 99;
+}
+
+.special-features-main {
+    margin-top: 35%;
+    padding: 0 60px;
 }
 
 .store-locator-section {
     background-color: #d8f0e2;
     padding: 10px 0px 70px 90px;
+    margin-top: -15px;
+    position: relative;
 }
 
-.bg-vachan {
-    background: url("../img/product/7.png");
-    background-size: cover;
-    width: 100%;
-    height: 573px;
-    padding: 80px;
+.store-search {
+    width: 320px;
 }
 
+.house {
+    background: $brand-white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.btn-search {
+    border-left: none;
+}
+
+// .bg-vachan {
+//     background: url("../img/product/7.png");
+//     background-size: cover;
+//     width: 100%;
+//     height: 573px;
+//     padding: 80px;
+// }
 //END OF PRODUCT SCSS
