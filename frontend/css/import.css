@@ -9820,10 +9820,6 @@ footer {
   font-size: 22px;
   font-family: 'Roboto-Light'; }
 
-.home {
-  background: #fff;
-  padding: 20px; }
-
 .grass {
   background: url("../img/product/3.jpg");
   background-size: cover;
@@ -9867,7 +9863,7 @@ footer {
   font-family: "Roboto-Regular";
   text-transform: uppercase;
   padding: 0px 190px 0 190px;
-  font-weight: 600;
+  font-weight: 400;
   color: #000101;
   margin-top: 5px; }
 
@@ -9950,7 +9946,8 @@ footer {
   margin-top: 100px; }
 
 .white-box-team-heading p {
-  font-family: "Roboto-Light"; }
+  font-family: "Roboto-Light";
+  text-align: justify; }
 
 .circle-image img {
   display: block;
@@ -10006,38 +10003,52 @@ footer {
   letter-spacing: 1px; }
 
 .main-overview {
-  background: url("../img/overview/bg.jpg");
+  background: url(../img/overview/bg.jpg);
   background-size: cover;
   margin-top: -22px;
-  position: relative; }
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center center; }
 
 .red-box {
   background-color: #ce3e26;
   color: #fff;
-  margin-top: 24%; }
+  margin-top: 27%;
+  position: relative; }
+  .red-box img {
+    position: absolute;
+    top: 30px;
+    left: 29%; }
 
 .aboutus-text {
-  padding: 50px;
+  padding: 25px 50px 50px 50px;
   padding-left: 10%;
-  padding-right: 10%; }
+  padding-right: 10%;
+  font-family: "Roboto-Light";
+  font-size: 16px; }
 
 .aboutus-heading h1 {
   padding-top: 30px;
   font-size: 60px;
-  font-family: "Roboto-Light";
+  font-family: "Quicksand-Regular";
+  letter-spacing: 1px;
   color: #fff; }
 
 .aboutus-heading p {
-  font-size: 20px;
-  font-family: "Roboto-Light";
+  font-size: 27px;
+  font-family: "Roboto-Regular";
   padding-top: 20px; }
 
 .vision-mission {
   background-color: #63c28a; }
+  .vision-mission p {
+    padding: 20px 40px 40px 40px;
+    font-family: "Roboto-Light"; }
   .vision-mission .mission {
     text-align: left;
     padding-top: 30px;
-    position: relative; }
+    position: relative;
+    padding-left: 40px; }
     .vision-mission .mission p {
       padding-left: 40px;
       padding-bottom: 20px; }
@@ -10049,9 +10060,13 @@ footer {
       padding-right: 40px; }
   .vision-mission p {
     padding-top: 30px;
-    font-size: 16px; }
+    font-size: 16px;
+    text-align: justify; }
   .vision-mission h1 {
-    color: #000101; }
+    color: #000101;
+    padding-right: 40px;
+    font-weight: 400;
+    font-size: 46px; }
 
 .visionparagraph {
   padding-left: 90px; }
@@ -10062,8 +10077,8 @@ h1.text-uppercase.vision:before, h1.vision.initialism:before {
   width: 15%;
   height: 10px;
   position: absolute;
-  top: 90px;
-  right: 9%; }
+  top: 78px;
+  right: 13%; }
 
 h1.text-uppercase.mission:before, h1.mission.initialism:before {
   content: '';
@@ -10071,8 +10086,8 @@ h1.text-uppercase.mission:before, h1.mission.initialism:before {
   width: 15%;
   height: 10px;
   position: absolute;
-  top: 90px;
-  left: 14%; }
+  top: 78px;
+  left: 16%; }
 
 .visionparagraph {
   position: relative; }
@@ -10089,30 +10104,44 @@ p.vimi-line:after {
 .overview-butn {
   background-color: #63c28a; }
   .overview-butn .side-text-overview {
-    padding-top: 75px;
-    padding-bottom: 75px; }
+    padding-top: 55px;
+    padding-bottom: 55px;
+    font-family: "Roboto-Regular"; }
+  .overview-butn .bt-cs-ot .btn-overview {
+    background-color: #fff;
+    font-size: 18px;
+    width: 150px;
+    color: #000101;
+    font-family: "Roboto-Regular";
+    font-weight: 400;
+    margin-right: 10px;
+    letter-spacing: 1px; }
 
 .side-text-overview span {
-  font-size: 25px;
-  padding-right: 20px; }
+  font-size: 20px;
+  padding-right: 20px;
+  letter-spacing: 1px;
+  font-family: "Roboto-Regular";
+  font-weight: 400; }
 
 .btn-overview {
-  font-size: 25px; }
+  font-size: 18px; }
 
 .overview-heading h1 {
   margin-top: 10%;
   font-size: 80px;
   color: #87492e;
-  font-family: "Roboto-Light"; }
+  font-family: "Quicksand-Regular";
+  letter-spacing: 1px; }
 
 .bottle-image img {
   position: absolute;
-  top: 36%; }
+  top: 38%; }
 
 .haystack-image img {
   position: absolute;
   right: 1px;
-  top: 34%; }
+  top: 38%; }
 
 .milk-image img {
   position: absolute;
@@ -10121,11 +10150,18 @@ p.vimi-line:after {
 
 .tractor-image img {
   position: absolute;
-  bottom: 7%;
+  bottom: 4%;
   left: -10px; }
 
 #values {
   background-color: #ebb94c; }
+  #values p {
+    font-family: "Roboto-Light";
+    font-size: 16px; }
+  #values .page-header h1 {
+    color: #000101;
+    font-weight: 400;
+    font-size: 46px; }
 
 .timeline {
   list-style: none;
@@ -10194,7 +10230,7 @@ h1#timeline:before {
   text-align: center;
   position: absolute;
   top: 25px;
-  left: 51%;
+  left: 51.1%;
   margin-left: -25px;
   background-color: #fff;
   z-index: 100;
