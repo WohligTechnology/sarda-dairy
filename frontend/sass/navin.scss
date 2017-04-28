@@ -214,19 +214,24 @@ p{
 // Overview CSS
 
 .main-overview{
-     background: url(../img/overview/nbg.jpg);
+      margin-top: 0px;
+    //  background: url(../img/overview/nbg.jpg);
     // background-size: cover;
-    background-color: #a4c76f;
-    margin-top: -84px;
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
-}
+//     background-color: #a4c76f;
+//     margin-top: -84px;
+//     background-repeat: no-repeat;
+//     background-position: center top;
+//     background-size: contain;
+ 
+  .main-image{
+
+  }
+ }
 
 .red-box {
   background-color:$brand-red;
   color: #fff;
-  margin-top: 275px;
+ // margin-top: 275px;
   position: relative;
   img{
     position: absolute;
@@ -373,11 +378,11 @@ content: '';
 }
 
 .overview-heading h1 {
-  margin-top: 10%;
-  font-size: 80px;
-  color: #87492e;
-  font-family: "Quicksand-Regular";
-  letter-spacing: 1px;
+    // margin-top: -52%;
+    font-size: 80px;
+    color: #87492e;
+    font-family: "Quicksand-Regular";
+    letter-spacing: 1px;
 }
 .bottle-image {
   position:absolute;
@@ -589,4 +594,5 @@ ul .timeline-heading .timeline-title {
   font-family: "Roboto-Light";
   font-weight: bold;
 }
+
 
