@@ -10,6 +10,9 @@ $brand-white:#fff;
 $brand-brown:#924118;
 $brand-red:#ce3e26;
 $brand-green:#63c38b;
+$Light-green:#aac977;
+$Dark-green:#63c28a;
+$Dark-red:#bb372c;
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 /* Bootstrap Variables Goes Here */
@@ -41,7 +44,7 @@ $brand-green:#63c38b;
 
 @import "other/font-fix";
 body {
-    padding-top: 70px;
+    // padding-top: 70px;
     overflow-x: hidden;
 }
 
@@ -196,8 +199,12 @@ h1 {
 //SCSS FOR HEADER
 .navbar {
     padding: 5px 0;
-    margin-top: -70px;
+    position: fixed;
+    width: 100%;
     background: rgba(255, 255, 255, 0.82);
+    margin: 0;
+    left: 0;
+    z-index: 99;
 }
 
 .navbar_menu {
@@ -596,16 +603,11 @@ footer {
 
 //END OF NEWS AND EVENT
 //SCSS FOR HOME
-.about-bg {
-    background: url("../img/aboutus/1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    margin-top: -85px;
+.aboutus-color {
+    background-color: $Light-green;
 }
 
 .about-white {
-    margin-top: 58.5%;
     background: $brand-white;
     padding: 50px;
     position: relative;
@@ -790,8 +792,8 @@ footer {
 }
 
 .btn-locator {
-    @include position(absolute,
-    15% -12% null null);
+    // @include position(absolute,
+    // 15% -12% null null);
     transform: rotate(-90deg);
     border-radius: 4px;
     background-color: $brand-brown;
@@ -863,6 +865,12 @@ footer {
 .special-features-main {
     margin-top: 35%;
     padding: 0 60px;
+}
+
+.store-locator {
+    position: absolute;
+    top: 500px;
+    right: -63px;
 }
 
 .store-locator-section {
