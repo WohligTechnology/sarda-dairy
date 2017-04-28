@@ -189,6 +189,10 @@ header {
     padding: 0px;
 }
 
+.relate {
+    position: relative;
+}
+
 h1 {
     font-family: Quicksand-Regular;
     color: $brand-brown;
@@ -433,18 +437,18 @@ footer {
 
 .fan {
     position: absolute;
-    right: 2%;
+    right: 22px;
     bottom: 0;
 }
 
 .truck {
     @include position(absolute,
-    -1.2% null null 6%);
+    -100px null null 0);
 }
 
 .wheel {
     @include position(absolute,
-    5% 7% null null);
+    -67px 50px null null);
 }
 
 .contact-info {
