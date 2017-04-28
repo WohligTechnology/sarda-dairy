@@ -9153,7 +9153,6 @@ button.close {
   src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 
 body {
-  padding-top: 70px;
   overflow-x: hidden; }
 
 img.loading {
@@ -9281,8 +9280,12 @@ h1 {
 
 .navbar {
   padding: 5px 0;
-  margin-top: -70px;
-  background: rgba(255, 255, 255, 0.82); }
+  position: fixed;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.82);
+  margin: 0;
+  left: 0;
+  z-index: 99; }
 
 .navbar_menu {
   float: left;
@@ -9609,15 +9612,10 @@ footer {
   width: 100%;
   margin-top: -85px; }
 
-.about-bg {
-  background: url("../img/aboutus/1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  margin-top: -85px; }
+.aboutus-color {
+  background-color: #aac977; }
 
 .about-white {
-  margin-top: 58.5%;
   background: #fff;
   padding: 50px;
   position: relative; }
@@ -9765,9 +9763,6 @@ footer {
   z-index: 9; }
 
 .btn-locator {
-  position: absolute;
-  top: 15%;
-  right: -12%;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   border-radius: 4px;
@@ -9818,6 +9813,11 @@ footer {
   margin-top: 35%;
   padding: 0 60px; }
 
+.store-locator {
+  position: absolute;
+  top: 500px;
+  right: -63px; }
+
 .store-locator-section {
   background-color: #d8f0e2;
   padding: 10px 0px 70px 90px;
@@ -9835,18 +9835,30 @@ footer {
 .btn-search {
   border-left: none; }
 
-.bg-csr {
-  background: url("../img/csr/newcbg.jpg");
-  margin-top: -32px;
-  background-size: contain;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-color: #bb372c; }
+.bg-csr .csr-main-image {
+  position: relative;
+  padding-top: 50px; }
 
-.white-box {
-  margin-top: 470px;
-  background-color: #ffffff;
-  padding: 65px 65px 50px 65px; }
+.bg-csr .csr-heading {
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
+  .bg-csr .csr-heading h1 {
+    font-size: 80px;
+    letter-spacing: 1px; }
+
+.brown-bg {
+  height: 100px;
+  background-color: #672f00; }
+
+.red-bg {
+  background-color: #bb372c; }
+  .red-bg .white-box {
+    margin-top: -6%;
+    background-color: #ffffff;
+    padding: 65px 65px 50px 65px; }
 
 .white-box-heading h1 {
   font-size: 26px;
@@ -9914,21 +9926,28 @@ footer {
       height: 100%;
       width: 100%; }
 
-.team-bg {
-  background: url("../img/team/newbg.jpg");
-  background-size: cover;
-  margin-top: -34px;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
+.team-bg .team-image {
+  position: relative;
+  padding-top: 50px; }
+
+.team-bg .team-heading {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.team-green-bg {
   background-color: #63c28a; }
+  .team-green-bg .white-box-team {
+    margin-top: -14%;
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 100px;
+    position: relative; }
 
 .white-box-team {
-  margin-top: 220px;
-  margin-bottom: 40px;
-  background-color: #fff;
-  padding: 100px;
-  position: relative; }
+  margin-top: -14%; }
 
 .white-box-team-heading h1 {
   font-size: 26px;
@@ -9963,8 +9982,9 @@ footer {
 
 .sitting-image {
   position: absolute;
-  top: -12%;
-  left: 22%; }
+  bottom: 7%;
+  left: 28%;
+  z-index: 99; }
 
 .truk-image {
   position: absolute;
@@ -9999,10 +10019,16 @@ footer {
 
 .main-overview {
   margin-top: 0px; }
+  .main-overview .main-image {
+    position: relative; }
+
+.green-bg {
+  background-color: #aac977; }
 
 .red-box {
   background-color: #ce3e26;
   color: #fff;
+  margin-top: -62px;
   position: relative; }
   .red-box img {
     position: absolute;
@@ -10010,7 +10036,7 @@ footer {
     left: 29%; }
 
 .aboutus-text {
-  padding: 25px 50px 50px 50px;
+  padding: 25px 50px 100px 50px;
   padding-left: 10%;
   padding-right: 10%;
   font-family: "Roboto-Light";
@@ -10123,7 +10149,12 @@ p.vimi-line:after {
   font-size: 80px;
   color: #87492e;
   font-family: "Quicksand-Regular";
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
 
 .bottle-image {
   position: absolute;
