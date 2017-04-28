@@ -260,6 +260,9 @@ footer {
         margin: 5px 0;
         font-weight: 600;
     }
+    a {
+        color: $brand-white;
+    }
 }
 
 .follow p {
@@ -286,8 +289,9 @@ footer {
 }
 
 .social-icon-footer a i {
-    color: #ab5225;
+    //color: #ab5225;
     font-size: 12px;
+    color: black;
 }
 
 //END OF FOOTER
@@ -423,13 +427,8 @@ footer {
 
 //END OF PROCUREMENT
 //SCSS FOR CONTACT US
-.contact-bg {
-    background: url("../img/contact/2.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
-    width: 100%;
-    margin-top: -20px;
+.contact-color {
+    background-color: $Light-green;
     position: relative;
 }
 
@@ -441,12 +440,12 @@ footer {
 
 .truck {
     @include position(absolute,
-    27% null null 6%);
+    -1.2% null null 6%);
 }
 
 .wheel {
     @include position(absolute,
-    31.30% 7% null null);
+    5% 7% null null);
 }
 
 .contact-info {
@@ -474,7 +473,7 @@ footer {
 }
 
 .contact-info {
-    margin: 260px 0 50px 0;
+    margin: 0px 0 50px 0;
     .flex-item-1 {
         position: relative;
         flex: 5;
@@ -521,7 +520,6 @@ footer {
 //SCSS FOR NEWS AND EVENTS
 .news-content {
     background: #fff;
-    margin-top: 27.5%;
     padding: 0 50px 50px 50px;
     position: relative;
     h1 {
@@ -530,6 +528,10 @@ footer {
         font-weight: 600;
         font-size: 60px;
     }
+}
+
+.news-event-color {
+    background: linear-gradient(#a2bb52, #a5c870);
 }
 
 .right-arrow {
@@ -593,18 +595,11 @@ footer {
     }
 }
 
-.news-bg {
-    background: url("../img/news-event/8.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    margin-top: -85px;
-}
-
 //END OF NEWS AND EVENT
 //SCSS FOR HOME
 .aboutus-color {
-    background-color: $Light-green;
+    // background: linear-gradient( rgba(#a2bb52) 0%, rgba(#a5c870) 1%, rgba(#bfd49d) 77%, rgba(#afbd90) 10%);
+    background: linear-gradient(#a2bb52, #a5c870, #bfd49d, #afbd90, #adb88c);
 }
 
 .about-white {
@@ -791,18 +786,6 @@ footer {
     z-index: 9;
 }
 
-.btn-locator {
-    // @include position(absolute,
-    // 15% -12% null null);
-    transform: rotate(-90deg);
-    border-radius: 4px;
-    background-color: $brand-brown;
-    color: $brand-white;
-    border: 1px solid $brand-brown;
-    font-size: 22px;
-    font-family: 'Roboto-Light';
-}
-
 //END OF HOME SCSS
 //SCSS FOR PRODUCT START
 // .grass {
@@ -820,6 +803,7 @@ footer {
 
 .vachan-unomilk {
     position: relative;
+    z-index: 1;
     .vachan-content {
         position: absolute;
         top: 0;
@@ -845,6 +829,9 @@ footer {
 .product-table {
     @include position(absolute,
     14% null null 32%);
+    table {
+        margin-bottom: 0;
+    }
 }
 
 .product-details {
@@ -867,10 +854,19 @@ footer {
     padding: 0 60px;
 }
 
-.store-locator {
+.stored-locator {
     position: absolute;
-    top: 500px;
+    top: 120vh;
     right: -63px;
+    .btn-locator {
+        transform: rotate(-90deg);
+        border-radius: 4px;
+        background-color: $brand-brown;
+        color: $brand-white;
+        border: 1px solid $brand-brown;
+        font-size: 22px;
+        font-family: 'Roboto-Light';
+    }
 }
 
 .store-locator-section {
