@@ -205,7 +205,9 @@ p{
 .sitting-image {
     position: absolute;
     bottom: 7%;
-    left: 28%;
+    left: 50%;
+    @include transform(translateX(-50%));
+
     z-index: 99;
 
 }
