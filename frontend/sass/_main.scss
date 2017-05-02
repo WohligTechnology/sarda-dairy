@@ -803,6 +803,26 @@ footer {
 .product-bg {
     padding-top: 63px;
 }
+.product-table {
+    td:first-child {
+        border-right: 1px solid $brand-brown;
+    }
+    td {
+        border-top: none;
+    }
+    td:nth-child(odd) {
+        padding: 0px !important;
+        vertical-align: middle;
+        line-height: 0;
+    }
+}
+
+.special-features-sec,
+.available-sec {
+    ul {
+        list-style-image: url('../img/product/4.png');
+    }
+}
 
 .vachan-unomilk {
     position: relative;

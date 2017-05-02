@@ -646,3 +646,89 @@ ul .timeline-heading .timeline-title {
 }
 
 
+// Product-css
+
+.vachan-unomilk{
+  .vachan-content{
+    h2 {
+      font-family: "Quicksand-Regular";
+      font-size: 35px;
+      color: #924118;
+      font-weight: 600;
+    }
+    .twentyfive{
+      font-family: "Quicksand-Regular";
+      font-size: 28px;
+      color: #924118;
+      text-align: right;
+
+    }
+    p{
+      font-family: "Roboto-Light";
+    }
+  }
+}
+
+.special-features-main {
+  .special-features-sec{
+    h2{
+      font-family: "Quicksand-Regular";
+      color: #ffffff;
+      font-weight: 600;
+      position: relative;
+      font-size: 35px;
+    }
+    h2:after{
+    content: '';
+    border-bottom: 1px solid #ffffff;
+    /* height: 20px; */
+    width: 62%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    }
+  }
+  .available-sec{
+    h2{
+      font-family: "Quicksand-Regular";
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 35px;
+      position: relative;
+    }
+    h2:after{
+    content: '';
+    border-bottom: 1px solid #ffffff;
+    /* height: 20px; */
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    }
+  }
+  li{
+      font-family: "Roboto-Light";
+      color: #924118;
+      font-size: 17px;
+  }
+}
+
+.product-details{
+  .product-table{
+    h2{
+      font-family: "Quicksand-Regular";
+      font-weight: 600;
+      color: #924118;
+    }
+    tr {
+      font-family: "Quicksand-Regular";
+      color: #924118;
+      font-weight: 600;
+    }
+    p{
+      font-family: "Quicksand-Regular";
+      color: #924118;
+      font-weight: 600;
+    }
+  }
+}
