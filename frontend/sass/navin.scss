@@ -712,10 +712,23 @@ ul .timeline-heading .timeline-title {
   li{
       font-family: "Roboto-Light";
       color: #924118;
+      padding-top: 5px;
   }
 }
 
 .product-details{
+  .approx{
+    position: absolute;
+    top: 33%;
+    right: 6%;
+    transform: rotate(90deg);
+    font-family: "Quicksand-Regular";
+    color: #924118;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
   .product-table{
     h2{
       font-family: "Quicksand-Regular";
@@ -734,7 +747,6 @@ ul .timeline-heading .timeline-title {
     }
   }
 }
-
 .house{
   h5{
     font-family: "Roboto-Light";
