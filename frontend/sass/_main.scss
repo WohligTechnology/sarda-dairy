@@ -901,6 +901,16 @@ footer {
     padding: 30px 0px 70px 90px;
     margin-top: -16px;
     position: relative;
+    .truck{
+    position: absolute;
+    top: -19%;
+    right: -2%;
+    }
+    .fan{
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    }
 }
 
 .store-search {

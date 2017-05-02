@@ -712,7 +712,6 @@ ul .timeline-heading .timeline-title {
   li{
       font-family: "Roboto-Light";
       color: #924118;
-      font-size: 17px;
   }
 }
 
@@ -738,6 +737,15 @@ ul .timeline-heading .timeline-title {
 
 .house{
   h5{
+    font-family: "Roboto-Light";
+    color: #000101;
+    font-weight: 600;
+    margin: 0;
+    padding-top: 10px;
 
+  }
+  p{
+    font-family: "Quicksand-Regular";
+    font-size: 13px;
   }
 }
