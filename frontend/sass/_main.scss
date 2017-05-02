@@ -435,22 +435,21 @@ footer {
     position: relative;
 }
 
-.fan {
-    position: absolute;
-    right: 22px;
-    bottom: 0;
-}
-
-.truck {
-    position: absolute;
-    top: -17%;
-    right: 0;
-    transform: scaleX(-1);
-}
-
-.wheel {
-    @include position(absolute,
-    -67px 50px null null);
+.contact-color {
+    .fan {
+        position: absolute;
+        right: 22px;
+        bottom: 0;
+    }
+    .truck {
+        position: absolute;
+        top: -22%;
+        left: 0;
+    }
+    .wheel {
+        @include position(absolute,
+        -67px 10px null null);
+    }
 }
 
 .contact-info {
@@ -808,7 +807,7 @@ footer {
         border-right: 1px solid $brand-brown;
     }
     td {
-        border-top: none;
+        border-top: none !important;
     }
     td:nth-child(odd) {
         padding: 0px !important;

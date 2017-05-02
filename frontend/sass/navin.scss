@@ -204,11 +204,11 @@ p{
 }
 .sitting-image {
     position: absolute;
-    bottom: 7%;
-    left: 50%;
+    bottom: 4%;
+    left: 49%;
     @include transform(translateX(-50%));
 
-    z-index: 99;
+    z-index: 2;
 
 }
 
@@ -292,7 +292,6 @@ p{
   padding-left: 10%;
   padding-right: 10%;
   font-family: "Roboto-Light";
-  font-size: 16px;
 }
 .aboutus-heading {
   h1 {
@@ -312,81 +311,85 @@ p{
   background-color:#63c28a;
   position: relative;
   margin-top: -34px;
+  .vision-div{
+  position: relative;
+      padding-right: 40px;
+   
+  
+  }
+  .mission-div{
+    padding-left: 40px;
+  }
   p{
-    padding:20px 40px 40px 40px;
+    // padding:0px 40px 40px 40px;
     font-family: "Roboto-Light";
   }
   .mission {
     text-align: left;
-    padding-top: 30px;
+   // padding-top: 30px;
     position: relative;
-    padding-left: 40px;
-    p{
-    padding-left: 40px;
-    padding-bottom: 20px;
-    }
-    
+   // padding-left: 40px;
+   
 
   }
   .vision{
     text-align: right;
-    padding-top: 30px;
+   // padding-top: 30px;
     position: relative;
     p{
       padding-right: 40px;
     }
   }
   p {
-    padding-top: 30px;
-    font-size: 16px;
+    // padding-top: 30px;
     text-align: justify;
   }
     h1{
       color: #000101;
-      padding-right: 40px;
+      //padding-right: 40px;
       font-weight: 400;
       font-size: 46px;
 
     }
 }
 
-
+.vision-mission-content{  
+    padding: 30px 80px 30px 80px;
+    }
 
 .visionparagraph {
-  padding-left: 90px;
+  //padding-left: 150px;
 }
 
 h1.text-uppercase.vision:before {
     content: '';
-    border-bottom: 3px solid #fff;
+    border-bottom: 2px solid #fff;
     width: 15%;
     height: 10px;
     position: absolute;
-    top: 78px;
-    right: 13%;
+    top: 45px;
+    right: 10%;
 }
 
 h1.text-uppercase.mission:before {
     content: '';
-    border-bottom: 3px solid #fff;
+    border-bottom: 2px solid #fff;
     width: 15%;
     height: 10px;
     position: absolute;
-    top: 78px;
+    top: 45px;
     left: 16%;
 }
 
-.visionparagraph{
-  position: relative;
-}
+
 p.vimi-line:after{
 content: '';
-    border: 2px solid #fff;
+    border: 1px solid #fff;
     width: 1px;
     height: 150px;
     position: absolute;
     right: -16px;
-    top: -14px;
+    top: 45px;
 }   
 .overview-butn {
   background-color: #63c28a;
@@ -435,8 +438,9 @@ content: '';
     @include transform(translateX(-50%));
 }
 .bottle-image {
-  position:absolute;
-  top: -40%;
+  position: absolute;
+    top: -36%;
+    left: -26px;
 }
 .haystack-image {
   position: absolute;
@@ -466,7 +470,6 @@ section.overview-footer{
   background-color:#ebb94c;
   p{
     font-family: "Roboto-Light";
-    font-size: 16px;
   }
   .page-header{
     h1{
@@ -488,7 +491,7 @@ section.overview-footer{
   bottom: 0;
   position: absolute;
   content: " ";
-  width: 3px;
+  width: 2px;
   background-color: #eeeeee;
   left: 50%;
   margin-left: -1.5px;
@@ -538,7 +541,7 @@ section.overview-footer{
 
 h1#timeline:before{
     content: '';
-    border-bottom: 3px solid #fff;
+    border-bottom: 2px solid #fff;
     width: 6%;
     height: 10px;
     position: absolute;
@@ -730,5 +733,11 @@ ul .timeline-heading .timeline-title {
       color: #924118;
       font-weight: 600;
     }
+  }
+}
+
+.house{
+  h5{
+
   }
 }
