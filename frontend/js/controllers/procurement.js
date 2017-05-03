@@ -25,7 +25,6 @@ myApp.controller('ProcurementCtrl', function ($scope, $state, TemplateService, N
             three: "views/section/section3.html",
             four: "views/section/section4.html",
             five: "views/section/section5.html",
-            // six: "views/section/section6.html"
         };
 
     })
