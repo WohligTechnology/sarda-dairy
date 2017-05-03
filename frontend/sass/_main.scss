@@ -651,6 +651,7 @@ footer {
     @include padding(150px 30px 70px 30px);
     position: relative;
     margin-top: -18%;
+    z-index: 1;
     .wheel {
         @include position(absolute,
         20% null null 21%);
@@ -695,9 +696,20 @@ footer {
     font-family: Roboto-Light;
 }
 
+.hay-image-about{
+    position: relative;
+    .about-hay-img{
+     position: absolute;
+    left: -7%;
+    top: -76px;
+    z-index: 0;
+    }
+}
+
 .about-contactus {
     padding: 50px 0;
     position: relative;
+    z-index: 1;
     .flex-item-1 {
         flex: 5;
     }
@@ -864,6 +876,10 @@ footer {
     //     position: absolute;
     //     top: 10%;
     // }
+    .fence-white{
+    position: absolute;
+    top: -12%;
+    }
 }
 
 .product-table {
