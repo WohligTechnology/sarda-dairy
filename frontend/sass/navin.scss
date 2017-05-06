@@ -27,12 +27,13 @@
 }
 .red-bg{
   background-color: $Dark-red;
+  padding: 0px 32px;
 
 .white-box {
   // margin-top:470px;
   margin-top: -6%;
   background-color: #ffffff;
-  padding:65px 65px 50px 65px;
+  padding:65px 75px 50px 75px;
   
 
 }
@@ -50,18 +51,20 @@
 
 .white-box-heading p{
   font-size:14px;
-  padding-bottom: 25px;
+  // padding-bottom: 25px;
   text-align: justify;
-  font-family: "Roboto-Light"
+  font-family: "Roboto-Light";
+  padding: 0px 18px;
 }
 .side-text {
   font-size:18px;
   color:#ce3e26;
   letter-spacing: 1px;
   span.alsoview{
-    font-size: 20px;
-    margin-right: 10px;
+    font-size: 18px;
+    margin-right: 6px;
     font-family:"Roboto-Regular";
+    font-weight: bold;
   }
 }
 
@@ -72,17 +75,18 @@
   width: 150px;
   color: #000101;
   font-family: "Roboto-Regular";
-  font-weight:400;
+  font-weight:bold;
   }
 
   .overview{
-   margin-right: 25px;
+   margin-right: 12px;
   }
 
 }
-
+// product-slider
 .csr-slider{
   margin-top: 40px;
+  padding: 0px 12px;
   .flex-slider{
     .flex-control-nav{
       display: none;
@@ -91,12 +95,12 @@
       display: block;
       width: 25px;
       height: 50px;
-      transform: rotate(-180deg);
+      // transform: rotate(-180deg);
       right: -50px !important;
       opacity: 1;
       &:before{
         content: '';
-        background-image:url('../img/aboutus/previous.png');
+        background-image:url('../img/csr/arleft.png');
         background-size: cover;
         height: 100%;
         width: 100%;
@@ -112,7 +116,7 @@
         opacity: 1;
         &:before{
         content: '';
-        background-image:url('../img/aboutus/previous.png');
+        background-image:url('../img/csr/arright.png');
         background-size: cover;
         height: 100%;
         width: 100%;
@@ -152,10 +156,11 @@
 .team-green-bg{
   background-color: $Dark-green;
 .white-box-team {
-  margin-top:-14%;
+  margin-top:-13%;
+  margin-right: 23px;
   margin-bottom: 40px;
   background-color: #fff;
-  padding:100px;
+  padding:75px;
   position: relative;
 
 }
@@ -166,11 +171,11 @@
 }
 .white-box-team-heading {
   h1{
-  font-size: 26px;
+  font-size: 22px;
   font-family: "Roboto-Regular";
   text-transform: uppercase;
   padding: 0px 190px 0 190px;
-  font-weight:500;
+  font-weight:400;
   color: #000101;
   margin-top: 100px;
 }
@@ -189,10 +194,12 @@ p{
 
 .image-text h1{
   font-size:20px;
+  color: #000101
 
 }
 .image-text p{
   padding:0px 20px 0 20px;
+  font-family: "Roboto-Light";
 }
 
 .row-1{
@@ -212,21 +219,23 @@ p{
 
 }
 
-.truk-image {
+.truk-image-team {
   position: absolute;
   bottom:3%;
-  left: -14%;
+  left: -8%;
 }
 
 .side-text-team {
     .alsoview-team{
-      margin-right: 10px;
+      margin-right: 6px;
     }
     font-size:18px;
     color:#ce3e26;
     padding-bottom: 120px;
-    padding-top: 50px;
+    padding-top: 20px;
     letter-spacing: 1px;
+    font-weight: bold;
+    font-family: "Roboto-Regular";
    .bt-ov-csr{
     .btn-team{
     background-color:#63c38b;
@@ -237,6 +246,7 @@ p{
     font-weight:400;
     margin-right: 10px;
     letter-spacing: 1px;
+    font-weight: bold;
      }
 
 
@@ -244,9 +254,9 @@ p{
 
 }
 .team-heading h1{
-  font-size:80px;
-  padding-top: 50px;
-  font-weight: 100px;
+  font-size:75px;
+  padding-top: 35px;
+  font-weight: bold;
   font-family: "Quicksand-Regular";
   color: #fff;
   // color: #000101;
@@ -273,6 +283,7 @@ p{
  }
 .green-bg{
   background-color:$Light-green;
+  padding: 0px 30px;
 }
 
 .red-box {
@@ -288,7 +299,7 @@ p{
 }
 
 .aboutus-text {
-  padding:25px 50px 100px 50px;
+  padding:25px 50px 80px 50px;
   padding-left: 10%;
   padding-right: 10%;
   font-family: "Roboto-Light";
@@ -347,8 +358,9 @@ p{
     h1{
       color: #000101;
       //padding-right: 40px;
-      font-weight: 400;
+      font-weight: bold;
       font-size: 46px;
+      font-family: "Quicksand-Regular";
 
     }
 }
@@ -407,7 +419,7 @@ content: '';
       width: 150px;
       color: #000101;
       font-family: "Roboto-Regular";
-      font-weight:400;
+      font-weight:bold;
       margin-right: 10px;
       letter-spacing: 1px;
 
@@ -420,7 +432,7 @@ content: '';
   padding-right: 20px;
   letter-spacing: 1px;
   font-family: "Roboto-Regular";
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .btn-overview {
@@ -459,7 +471,7 @@ section.overview-footer{
   position:absolute;
   // bottom: 4%;
   left: -10px;
-  top: -85px;
+  top: -59px;
 }
 }
 
@@ -470,11 +482,12 @@ section.overview-footer{
   background-color:#ebb94c;
   p{
     font-family: "Roboto-Light";
+    color: #000101;
   }
   .page-header{
     h1{
       color:#000101;
-      font-weight: 400;
+      font-weight: bold;
       font-size: 46px;
     }
   }
@@ -646,6 +659,7 @@ ul .timeline-heading .timeline-title {
   font-size: 20px;
   font-family: "Roboto-Light";
   font-weight: bold;
+  color: #000101;
 }
 
 
@@ -655,9 +669,10 @@ ul .timeline-heading .timeline-title {
   .vachan-content{
     h2 {
       font-family: "Quicksand-Regular";
-      font-size: 35px;
+      font-size: 40px;
       color: #924118;
       font-weight: 600;
+      text-align: right;
     }
     .twentyfive{
       font-family: "Quicksand-Regular";
@@ -668,6 +683,7 @@ ul .timeline-heading .timeline-title {
     }
     p{
       font-family: "Roboto-Light";
+      color: #0f0f0f;
     }
   }
 }
@@ -680,6 +696,7 @@ ul .timeline-heading .timeline-title {
       font-weight: 600;
       position: relative;
       font-size: 35px;
+      margin-left: 15px;
     }
     h2:after{
     content: '';
@@ -688,7 +705,7 @@ ul .timeline-heading .timeline-title {
     width: 62%;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 6px;
     }
   }
   .available-sec{
@@ -698,6 +715,7 @@ ul .timeline-heading .timeline-title {
       font-weight: 600;
       font-size: 35px;
       position: relative;
+      margin-left: 15px;
     }
     h2:after{
     content: '';
@@ -712,7 +730,7 @@ ul .timeline-heading .timeline-title {
   li{
       font-family: "Roboto-Light";
       color: #924118;
-      padding-top: 5px;
+      padding-top: 8px;
   }
 }
 

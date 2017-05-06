@@ -259,7 +259,7 @@ h1 {
 footer {
     background-color: #171717;
     color: #ffffff;
-    padding: 10px 0;
+    padding: 18px 0;
     p {
         margin: 5px 0;
         font-weight: 600;
@@ -374,7 +374,7 @@ footer {
 //SCSS FOR SECTION-3
 .section-3 {
     position: relative;
-    margin-top: 170px;
+    margin-top: 160px;
     p {
         @include position(absolute,
         60% null null 47%);
@@ -405,7 +405,7 @@ footer {
 .sec-bg-4 {
     background-image: url("../img/home/4.png");
     position: relative;
-    margin-top: -140px;
+    margin-top: -148px;
     min-height: 870px;
 }
 
@@ -430,6 +430,7 @@ footer {
 
 //END OF PROCUREMENT
 //SCSS FOR CONTACT US
+
 .contact-color {
     background-color: $Light-green;
     position: relative;
@@ -443,7 +444,7 @@ footer {
     }
     .truck {
         position: absolute;
-        top: -22%;
+        top: -21.5%;
         left: 0;
     }
     .wheel {
@@ -454,13 +455,15 @@ footer {
 
 .contact-info {
      ::-webkit-input-placeholder {
-        color: white;
+        // color: 
+        color:#ebbcb8;
     }
     .form-control {
         background: #cd3d26;
         &:focus,
         &:active {
             border-color: white;
+
         }
     }
     .map {
@@ -530,12 +533,13 @@ footer {
         font-family: Quicksand-Regular;
         color: $brand-red;
         font-weight: 600;
-        font-size: 60px;
+        font-size: 56px;
     }
 }
 
 .news-event-color {
     background: linear-gradient(#a2bb52, #a5c870);
+    padding: 0px 20px;
 }
 
 .right-arrow {
@@ -574,7 +578,7 @@ footer {
 
 .wheel-news {
     @include position(absolute,
-    1% null null 19%);
+    1% null null 21.5%);
 }
 
 .news-heading {
@@ -589,13 +593,15 @@ footer {
     padding: 45px 30px;
     h5 {
         font-family: "Roboto-Medium";
+        color: #151718;
     }
     p {
         font-family: "Roboto-Light";
     }
     span {
-        font-weight: 600;
+        font-weight: 400;
         font-family: "Roboto-Regular";
+        color: #151718;
     }
 }
 
@@ -618,7 +624,7 @@ footer {
     background-size: cover;
     width: 100%;
     position: relative;
-    z-index: 9;
+    z-index: 3;
     .flexslider {
         background: transparent;
         border: none;
@@ -633,6 +639,7 @@ footer {
             color: $brand-white;
             font-family: Roboto-Regular;
             font-weight: 600;
+            letter-spacing: 2px;
         }
     }
 }
@@ -651,7 +658,7 @@ footer {
     @include padding(150px 30px 70px 30px);
     position: relative;
     margin-top: -18%;
-    z-index: 1;
+    z-index: 2;
     .wheel {
         @include position(absolute,
         20% null null 21%);
@@ -702,7 +709,7 @@ footer {
      position: absolute;
     left: -7%;
     top: -76px;
-    z-index: 0;
+    z-index: 1;
     }
 }
 
@@ -719,7 +726,7 @@ footer {
         background: $brand-white;
     }
     h5 {
-        font-weight: 600;
+        font-weight: bold;
     }
     h5,
     p {
@@ -756,9 +763,11 @@ footer {
         padding: 28px;
         h5 {
             font-family: Roboto-Medium;
+            font-weight: bold;
         }
         span {
             font-family: Roboto-Regular;
+            font-weight: bold;
         }
     }
 }
@@ -767,10 +776,13 @@ footer {
     padding: 15px;
     h5 {
         font-family: Roboto-Medium;
+        font-weight: bold;
     }
     span {
         font-family: Roboto-Regular;
+        font-weight: bold;
     }
+
 }
 
 .event-heading {
@@ -787,13 +799,13 @@ footer {
 .vehicle {
     @include position(absolute,
     35% null null null);
-    z-index: 999;
+    z-index: 2;
 }
 
 .waves {
     @include position(absolute,
     17% null null 62%);
-    z-index: 999;
+    z-index: 4;
 }
 
 .cow {
@@ -837,7 +849,7 @@ footer {
 // }
 
 .table > tbody > tr > td {
-        padding: 12px !important;
+        padding: 13px !important;
         vertical-align: middle;
         line-height: 0;
 
@@ -859,7 +871,7 @@ footer {
     .vachan-content {
         position: absolute;
         top: 0;
-        padding: 90px 75px;
+        padding: 90px 50px;
         text-align: justify;
     }
 }
@@ -913,7 +925,7 @@ footer {
 
 .special-features-main {
     margin-top: 26%;
-    padding: 0 60px;
+    padding: 0 41px;
     .available-sec{
         margin-top:8%; 
     }
@@ -942,7 +954,7 @@ footer {
     .truck{
     position: absolute;
     top: -19%;
-    right: -2%;
+    right: -1.5%;
     }
     .fan{
     position: absolute;
@@ -953,11 +965,15 @@ footer {
 
 .store-search {
     width: 320px;
+    h2{
+        font-family: "Roboto-Light";
+        color:#1b1d1d;
+    }
 }
 
 .house {
     background: $brand-white;
-    padding: 20px;
+    padding: 15px 20px;
     margin-top: 30px;
 }
 
@@ -973,3 +989,68 @@ footer {
 //     padding: 80px;
 // }
 //END OF PRODUCT SCSS
+
+// navin
+.contact-info{
+    textarea.form-control{
+        resize: none;
+    }
+}
+
+.table-striped > tbody > tr:nth-of-type(odd){
+    background-color: #f1f1f1 !important;
+
+}
+
+.about-contactus{
+        textarea.form-control{
+        resize: none;
+    }
+}
+
+.product-slider{
+    .flex-slider{
+    .flex-control-nav{
+      display: none;
+    }
+    .flex-next{
+      display: block;
+      width: 30px;
+      height: 50px;
+      right: 25px !important;
+      top: 56%;
+      opacity: 1;
+      &:before{
+        content: '';
+        background-image:url('../img/product/next.png');
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+
+      }
+      
+        }
+        .flex-prev{
+        display: block;
+        width: 25px;
+        height: 50px;
+        left: 25px !important;
+        top: 56% !important;
+        opacity: 1;
+        &:before{
+        content: '';
+        background-image:url('../img/product/prev.png');
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+
+
+      }
+    }
+  }
+}
+
+
+.home {
+    padding-top: 63px;
+}

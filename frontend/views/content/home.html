@@ -29,14 +29,23 @@
                 <div class="product-heading">
                     <h1 class="text-center text-uppercase">Products</h1>
                 </div>
-                <flex-slider flex-slide="s in myProduct track by $index" prev-text="" next-text="" animation="slide" item-width="200" item-margin="45"
+                <!--<flex-slider flex-slide="s in myProduct track by $index" prev-text="" next-text="" animation="slide" item-width="200" item-margin="45"
                     min-items="4">
                     <li>
                         <img ng-src="{{s.img}}" class="img-full">
 
                         <h3 class="text-center">{{s.text}}</h3>
                     </li>
-                </flex-slider>
+                </flex-slider>-->
+                <div class="flex-slider">
+        <flex-slider flex-slide="s in myProduct track by $index" prev-text="" next-text="" animation="slide" item-width="200" item-margin="45" min-items="4">
+          <!--animation="slide" item-width="100" item-margin="50" min-items="3">-->
+          <li>
+            <img ng-src="{{s.img}}" class="img-full">
+            <h3 class="text-center">{{s.text}}</h3>
+          </li>
+        </flex-slider>
+                </div>
             </div>
             <div class="cow"> <img src="img/aboutus/5.png" alt="" class="img-responsive"></div>
         </div>
@@ -152,22 +161,22 @@
                         <form>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="name" placeholder="First Name">
+                                    <input type="text" class="form-control" id="name" placeholder="First Name" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                                    <input type="text" class="form-control" id="lastname" placeholder="Last Name" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="email" placeholder="Email Address">
+                                    <input type="email" class="form-control" id="email" placeholder="Email Address" required>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="mobile" placeholder="Mobile No.">
+                                    <input type="text" class="form-control" id="mobile" placeholder="Mobile No." maxlength="10" required pattern="(7|8|9)\d{9};"/>
                                 </div>
                             </div>
                             <div class="col-md-12">
