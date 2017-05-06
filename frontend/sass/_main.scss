@@ -362,7 +362,8 @@ footer {
 
 .section-2 {
     position: relative;
-    margin-top: 160px;
+    margin-top: 175px;
+    margin-right:-20px;
     p {
         @include position(absolute,
         60% null null 47%);
@@ -374,11 +375,11 @@ footer {
 //SCSS FOR SECTION-3
 .section-3 {
     position: relative;
-    margin-top: 160px;
+    margin-top: 175px;
     p {
         @include position(absolute,
         60% null null 47%);
-        @include padding(0 25px);
+        @include padding(0 50px);
         transform: translate(-50%, -50%);
     }
 }
@@ -393,11 +394,11 @@ footer {
 //SCSS FOR SECTION-4
 .section-4 {
     position: relative;
-    margin-top: 150px;
+    margin-top: 165px;
     p {
         @include position(absolute,
-        60% null null 50%);
-        @include padding(0 0px);
+        60% null null 47%);
+        @include padding(0 41px);
         transform: translate(-50%, -50%);
     }
 }
@@ -412,11 +413,12 @@ footer {
 //SCSS FOR SECTION-5
 .section-5 {
     position: relative;
-    margin-top: 160px;
+    margin-top: 175px;
+    margin-left: -10px;
     p {
         @include position(absolute,
         60% null null 48%);
-        @include padding(0 20px);
+        @include padding(0 34px);
         transform: translate(-50%, -50%);
     }
 }
@@ -610,11 +612,12 @@ footer {
 .aboutus-color {
     // background: linear-gradient( rgba(#a2bb52) 0%, rgba(#a5c870) 1%, rgba(#bfd49d) 77%, rgba(#afbd90) 10%);
     background: linear-gradient(#a2bb52, #a5c870, #bfd49d, #afbd90, #adb88c);
+padding: 0px 30px;
 }
 
 .about-white {
     background: $brand-white;
-    padding: 50px;
+    padding: 60px;
     position: relative;
 }
 
@@ -707,7 +710,7 @@ footer {
     position: relative;
     .about-hay-img{
      position: absolute;
-    left: -7%;
+    left: -5%;
     top: -76px;
     z-index: 1;
     }
@@ -799,12 +802,12 @@ footer {
 .vehicle {
     @include position(absolute,
     35% null null null);
-    z-index: 2;
+    z-index: 4;
 }
 
 .waves {
     @include position(absolute,
-    17% null null 62%);
+    16% null null 63%);
     z-index: 4;
 }
 
@@ -918,7 +921,7 @@ footer {
 
 .milk {
     position: absolute;
-    bottom: -79px;
+    bottom: -95px;
     left: -8px;
     z-index: 2;
 }
@@ -953,7 +956,7 @@ footer {
     position: relative;
     .truck{
     position: absolute;
-    top: -19%;
+    top: -28%;
     right: -1.5%;
     }
     .fan{
@@ -1053,4 +1056,9 @@ footer {
 
 .home {
     padding-top: 63px;
+}
+
+
+.sec-mov{
+    margin-right: -30px;
 }

@@ -366,7 +366,7 @@ p{
 }
 
 .vision-mission-content{  
-    padding: 30px 80px 30px 80px;
+    padding: 44px 160px 30px 160px;
     }
 
 .visionparagraph {
@@ -495,13 +495,13 @@ section.overview-footer{
 
 .timeline {
   list-style: none;
-  padding: 20px 0 20px;
+  padding: 20px 0 55px;
   position: relative;
 }
 
 .timeline:before {
   top: 0;
-  bottom: 0;
+  bottom: 50px;
   position: absolute;
   content: " ";
   width: 2px;
@@ -716,6 +716,7 @@ ul .timeline-heading .timeline-title {
       font-size: 35px;
       position: relative;
       margin-left: 15px;
+      padding-top: 15px;
     }
     h2:after{
     content: '';
@@ -730,7 +731,7 @@ ul .timeline-heading .timeline-title {
   li{
       font-family: "Roboto-Light";
       color: #924118;
-      padding-top: 8px;
+      padding-top: 10px;
   }
 }
 
